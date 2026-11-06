@@ -32,7 +32,10 @@
 .title { font-family: var(--f-title); color: var(--ink); font-size: 60px; line-height: 1; text-transform: uppercase; }
 .split { position: relative; display: block; }
 .split-base { display: block; clip-path: inset(52% -0.2em -0.2em -0.2em); }
-.split-top {
+/* Верхняя половина букв рисуется стилем: в тексте страницы слово одно */
+.split::after {
+  content: attr(data-text);
+  content: attr(data-text) / "";
   position: absolute; inset: 0;
   clip-path: inset(-0.2em -0.2em 48% -0.2em);
   transform: translateX(0.07em);
@@ -184,7 +187,7 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .split-top { animation: none; }
+  .split::after { animation: none; }
   .up { animation-name: fade; }
   @keyframes fade { from { opacity: 0; } }
   .js .reveal { transform: none; }
