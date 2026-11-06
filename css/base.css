@@ -1,0 +1,40 @@
+/* Цвета и шрифты сайта книги. Только отсюда: docs/Брендбук Книга.md */
+:root {
+  --mist: #c9cdd0;
+  --mint: #b3ccc8;
+  --mint-2: #c2d5d2;
+  --sand: #9da2a0;
+  --sand-2: #b4b7b4;
+  --paper: #f6f7f5;
+  --ink: #153233;
+  --ink-2: #24484a;
+  --night: #111312;
+  --text: #1d2a2a;
+  --muted: #3c4948;
+
+  --f-title: 'Prata', Georgia, serif;
+  --f-hand: 'Neucha', 'Segoe Print', cursive;
+  --f-text: 'Literata', Georgia, serif;
+
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  --wrap: 1120px;
+  --gut: 24px;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+body {
+  margin: 0;
+  background: var(--mist);
+  color: var(--text);
+  font: 400 18px/1.6 var(--f-text);
+  -webkit-font-smoothing: antialiased;
+}
+img { display: block; max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { margin: 0; font-weight: 400; text-wrap: balance; }
+p { margin: 0; text-wrap: pretty; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+}
