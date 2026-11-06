@@ -163,7 +163,7 @@
   .hero-pic { order: -1; }
   .hero-pic img { max-width: 240px; margin: 0 auto; }
   .hero-author { font-size: 20px; margin-bottom: 8px; }
-  .title { font-size: 48px; }
+  .title { font-size: min(48px, 13.4vw); }
   .title-hand { font-size: 36px; margin-top: 12px; }
   .lead { font-size: 18px; margin-top: 16px; }
   .shops { margin-top: 24px; }

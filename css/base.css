@@ -1,4 +1,9 @@
 /* Цвета и шрифты сайта книги. Только отсюда: docs/Брендбук Книга.md */
+/* Шрифты лежат на сайте (tools/shrifty.py): страница не ждёт чужой сервер */
+@font-face { font-family: 'Literata'; src: url(../fonts/literata.woff2) format('woff2'); font-weight: 400 600; font-display: swap; }
+@font-face { font-family: 'Prata'; src: url(../fonts/prata.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+@font-face { font-family: 'Neucha'; src: url(../fonts/neucha.woff2) format('woff2'); font-weight: 400; font-display: swap; }
+
 :root {
   --mist: #c9cdd0;
   --mint: #b3ccc8;
