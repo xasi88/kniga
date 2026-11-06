@@ -135,6 +135,8 @@
 .facts div { display: grid; grid-template-columns: 140px 1fr; gap: 16px; padding: 12px 0; border-bottom: 1px solid rgba(194, 213, 210, 0.2); }
 .facts dt { font-size: 16px; color: var(--mint); }
 .facts dd { margin: 0; font-size: 16px; color: var(--paper); font-variant-numeric: tabular-nums; }
+/* Ссылка на издательство: палец попадает в 44 точки, строка таблицы не растёт */
+.facts dd a { display: inline-flex; align-items: center; min-height: 44px; margin: -10px 0; text-underline-offset: 4px; }
 
 /* Подвал */
 .foot { background: var(--night); color: var(--mint-2); padding: 48px 0 calc(48px + env(safe-area-inset-bottom)); font-size: 16px; }
